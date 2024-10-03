@@ -1,0 +1,68 @@
+﻿<wpf:ResourceDictionary xml:space="preserve" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:ss="urn:shemas-jetbrains-com:settings-storage-xaml" xmlns:wpf="http://schemas.microsoft.com/winfx/2006/xaml/presentation">
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=06a14c9a_002D861f_002D4e10_002D9b51_002Da25c719a22b6/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="FunctionAdd_ShouldAddNewMusicToDatabase" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+  &lt;TestAncestor&gt;&#xD;
+    &lt;TestId&gt;xUnit::807F041B-EF87-460B-8187-AED95398B768::net7.0::TestLab_3.UnitTest1.FunctionAdd_ShouldAddNewMusicToDatabase&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;xUnit::807F041B-EF87-460B-8187-AED95398B768::net7.0::TestLab_3.UnitTest1.FunctionDelete_ShouldDeteleMusicFromDatabase&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;xUnit::807F041B-EF87-460B-8187-AED95398B768::net7.0::TestLab_3.UnitTest1.FunctionDelete_ShouldDeteleMusicFromDatabase_ReturnFalse&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;xUnit::807F041B-EF87-460B-8187-AED95398B768::net7.0::TestLab_3.UnitTest1.FunctionList_ReturnsExpected&lt;/TestId&gt;&#xD;
+  &lt;/TestAncestor&gt;&#xD;
+&lt;/SessionState&gt;</s:String>
+	
+	
+	
+	
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=3bb74c6e_002Da2ef_002D42ad_002D8452_002Ddb4ad58cc39e/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" IsActive="True" Name="FunctionList_ReturnsExpected" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+  &lt;TestAncestor&gt;&#xD;
+    &lt;TestId&gt;xUnit::807F041B-EF87-460B-8187-AED95398B768::net7.0::TestLab_3.UnitTest1.FunctionList_ReturnsExpected&lt;/TestId&gt;&#xD;
+  &lt;/TestAncestor&gt;&#xD;
+&lt;/SessionState&gt;</s:String>
+	
+	
+	
+	
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=980a6537_002D2462_002D42ea_002Db563_002D38ddc7f7217c/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="FunctionList_ReturnsExpected #3" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+  &lt;TestAncestor&gt;&#xD;
+    &lt;TestId&gt;xUnit::807F041B-EF87-460B-8187-AED95398B768::net7.0::TestLab_3.UnitTest1.FunctionList_ReturnsExpected&lt;/TestId&gt;&#xD;
+  &lt;/TestAncestor&gt;&#xD;
+&lt;/SessionState&gt;</s:String>
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=9a7aca67_002Db9a6_002D4dd9_002Dab24_002D61642604dc1c/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="FunctionSearch_ReturnsExpected #3" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+  &lt;TestAncestor&gt;&#xD;
+    &lt;TestId&gt;xUnit::807F041B-EF87-460B-8187-AED95398B768::net7.0::TestLab_3.UnitTest1.FunctionSearch_ReturnsExpected&lt;/TestId&gt;&#xD;
+  &lt;/TestAncestor&gt;&#xD;
+&lt;/SessionState&gt;</s:String>
+	
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=b0e30932_002Daccb_002D4bf8_002D8a06_002D0f81852f9f10/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="FunctionSearch_ReturnsExpected #4" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+  &lt;TestAncestor&gt;&#xD;
+    &lt;TestId&gt;xUnit::807F041B-EF87-460B-8187-AED95398B768::net7.0::TestLab_3.UnitTest1.FunctionSearch_ReturnsExpected&lt;/TestId&gt;&#xD;
+  &lt;/TestAncestor&gt;&#xD;
+&lt;/SessionState&gt;</s:String>
+	
+	
+	
+	
+	
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=cfc4a516_002De405_002D4c9f_002D8d61_002D19f625715613/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="FunctionSearch_ReturnsExpected #2" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+  &lt;TestAncestor&gt;&#xD;
+    &lt;TestId&gt;xUnit::807F041B-EF87-460B-8187-AED95398B768::net7.0::TestLab_3.UnitTest1.FunctionSearch_ReturnsExpected&lt;/TestId&gt;&#xD;
+  &lt;/TestAncestor&gt;&#xD;
+&lt;/SessionState&gt;</s:String>
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=cfca4f72_002D26e8_002D4866_002D9c30_002Dc2b43f93054c/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="FunctionList_ReturnsExpected #2" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+  &lt;TestAncestor&gt;&#xD;
+    &lt;TestId&gt;xUnit::807F041B-EF87-460B-8187-AED95398B768::net7.0::TestLab_3.UnitTest1.FunctionList_ReturnsExpected&lt;/TestId&gt;&#xD;
+  &lt;/TestAncestor&gt;&#xD;
+&lt;/SessionState&gt;</s:String>
+	
+	
+	
+	
+	
+	
+	
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=f8c122d8_002Dac52_002D41b1_002Da278_002Df203b914cd06/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="FunctionList_ReturnsExpected #4" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+  &lt;TestAncestor&gt;&#xD;
+    &lt;TestId&gt;xUnit::807F041B-EF87-460B-8187-AED95398B768::net7.0::TestLab_3.UnitTest1.FunctionList_ReturnsExpected&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;xUnit::807F041B-EF87-460B-8187-AED95398B768::net7.0::TestLab_3.UnitTest1.FunctionSearch_ReturnsExpected&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;xUnit::807F041B-EF87-460B-8187-AED95398B768::net7.0::TestLab_3.UnitTest1.FunctionAdd_ShouldAddNewMusicToDatabase&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;xUnit::807F041B-EF87-460B-8187-AED95398B768::net7.0::TestLab_3.UnitTest1.FunctionDelete_ShouldDeteleMusicFromDatabase_ReturnFalse&lt;/TestId&gt;&#xD;
+  &lt;/TestAncestor&gt;&#xD;
+&lt;/SessionState&gt;</s:String></wpf:ResourceDictionary>

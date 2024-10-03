@@ -1,0 +1,177 @@
+<svg width="100%" height = "100%" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <g id = "гитара" transform = "rotate(0) translate(0 0)">
+        <path stroke = "brown" stroke-width = "2" fill = "#917C6F" d = "M 254,515 L 289,529 Q 352,539 375,465 C 384,430 384,404 428,393 Q 470,381 462,338 L 389, 396" />
+        <path stroke = "brown" stroke-width = "2" fill = "#DECD87" d = "M 414, 258 Q 354, 204 318,258 C 301,288 301,301 243,307 Q 135,326 167,410 210,518 290,524 342,529 366,458 C 375,419 374,388 430,378 Q 493,365 440,285"/>
+        <path fill = "silver" d = "M 563,169 C 596,143 585,164 621,137 L 655,111 658,104 578,154"/>
+        <g transform = "translate(571.5 108.8) rotate(45)">
+            <rect x = "0" y = "0" width = "58" height = "7" rx = "3" fill = "gray"/>
+            <rect x = "2" y = "-20" width = "58" height = "7" rx = "3" fill = "gray"/>
+            <rect x = "4" y = "-40" width = "58" height = "7" rx = "3" fill = "gray"/>
+        </g>
+        <path stroke = "brown" fill = "maroon"  d = "M 355, 309 L 556,138 C 571,126 558,128 579,113 L 624,77 Q 648,79 658,104 L 612,138 C 588,158 593,140 560,172 L 379,336"/>
+        <rect transform = "translate(245 355) rotate(48)" x = "0" y = "0" width = "105" height = "24" rx = "2" fill = "black"/>
+        <g id = "резонаторное" transform = "scale(1)">
+            <circle cx = "352" cy ="334" r = "30" stroke = "black" fill = "maroon" />
+            <circle cx = "352" cy ="334" r = "37" stroke = "black" fill = "none" />
+            <circle cx = "352" cy ="334" r = "39" stroke = "black" fill = "none" />
+            <circle cx = "352" cy ="334" r = "47" stroke = "black" fill = "none" />
+            <circle cx = "352" cy ="334" r = "49" stroke = "black" fill = "none" />
+       </g>
+        <g id = "гриф">
+            <line x1 = "367" y1 = "298" x2 = "390" y2 = "323" stroke = "#FFF6D5" fill = "none" />
+            <line x1 = "373" y1 = "294" x2 = "396" y2 = "318" stroke = "#FFF6D5" fill = "none" />
+            <line x1 = "379" y1 = "288" x2 = "402" y2 = "312" stroke = "#FFF6D5" fill = "none" />
+            <line x1 = "386" y1 = "283" x2 = "409" y2 = "307" stroke = "#FFF6D5" fill = "none" />
+            <line x1 = "393" y1 = "277" x2 = "416" y2 = "300" stroke = "#FFF6D5" fill = "none" />
+            <line x1 = "400" y1 = "270" x2 = "423" y2 = "294" stroke = "#FFF6D5" fill = "none" />
+            <line x1 = "408" y1 = "264" x2 = "430" y2 = "287" stroke = "#FFF6D5" fill = "none" />
+            <line x1 = "416" y1 = "257" x2 = "438" y2 = "280" stroke = "#FFF6D5" fill = "none" />
+            <line x1 = "424" y1 = "250" x2 = "447" y2 = "272" stroke = "#FFF6D5" fill = "none" />
+            <line x1 = "434" y1 = "242" x2 = "456" y2 = "264" stroke = "#FFF6D5" fill = "none" />
+            <line x1 = "443" y1 = "234" x2 = "465" y2 = "255" stroke = "#FFF6D5" fill = "none" />
+            <line x1 = "453" y1 = "225" x2 = "475" y2 = "246" stroke = "#FFF6D5" fill = "none" />
+            <line x1 = "464" y1 = "216" x2 = "485" y2 = "237" stroke = "#FFF6D5" fill = "none" />
+            <line x1 = "475" y1 = "207" x2 = "497" y2 = "227" stroke = "#FFF6D5" fill = "none" />
+            <line x1 = "487" y1 = "197" x2 = "508" y2 = "217" stroke = "#FFF6D5" fill = "none" />
+            <line x1 = "500" y1 = "186" x2 = "520" y2 = "205" stroke = "#FFF6D5" fill = "none" />
+            <line x1 = "513" y1 = "175" x2 = "533" y2 = "194" stroke = "#FFF6D5" fill = "none" />
+            <line x1 = "527" y1 = "163" x2 = "547" y2 = "182" stroke = "#FFF6D5" fill = "none" />
+            <line x1 = "542" y1 = "151" x2 = "561" y2 = "168" stroke = "#FFF6D5" fill = "none" />
+            <polyline points = "260,390 558,140 603,112" stroke = "black" fill = "none"/>
+            <polyline points = "266,396 561,142 603,112" stroke = "black" fill = "none"/>
+            <polyline points = "270,401 564,146 603,112" stroke = "black" fill = "none"/>
+            <polyline points = "276,408 568,148 612,121" stroke = "black" fill = "none"/>
+            <polyline points = "279,413 572,151 612,121" stroke = "black" fill = "none"/>
+            <polyline points = "282,418 575,155 612,121" stroke = "black" fill = "none"/>
+         </g>
+    </g>
+    <animateTransform 
+        xlink:href = "#гитара"
+        attributeName = "transform"
+        attributeType = "XML"
+        type = "rotate"
+        dur = "3s"
+        begin = "0s"
+        end = "15s"
+        repeatCount = "indefinite"
+        fill = "freeze"
+        values = "0 337 353; 5 337 353; 0 337 353"/>
+    <g id = "note">
+        <path id = "note_1" fill = "black" d = "M 395, 169 Q 388,161 399,155 L 403, 176 C 404,182 419,182 420,174 420,170 411,167 404,173 L 399,146 C 394,158 383,159 395,169"/>
+            <animateMotion
+            xlink:href = "#note_1"
+            dur = "5s"
+            repeatCount = "indefinite"
+            begin = "0s"
+            end = "15s"
+            fill = "freeze"
+            path = "M 0,0 C -40,-33 -302,120 -395,-10"/>
+            <animate
+            xlink:href = "#note_1"
+            attributeName = "fill"
+            dur = "5s"
+            repeatCount = "indefinite"
+            begin = "0s"
+            end = "15s"
+            fill = "freeze"
+            from = "back"
+            to = "white" />
+        <path id = "note_2" fill = "black" d = "M 429,84 L 444,105 C 441,105 435,110 438,113 441,116 449,112 447,106 L 435,89 C 439,87 445,86 445,95 446,86 443,86 429,84"/>  
+            <animateMotion
+            xlink:href = "#note_2"
+            dur = "4s"
+            repeatCount = "indefinite"
+            begin = "0s"
+            end = "16s"
+            fill = "freeze"
+            path = "M 0,0 C -66,-26 -334,-20 -429,66" />
+            <animate
+            xlink:href = "#note_2"
+            attributeName = "fill"
+            dur = "4s"
+            repeatCount = "indefinite"
+            begin = "0s"
+            end = "16s"
+            fill = "freeze"
+            from = "back"
+            to = "white"/> 
+        <path id = "note_3" fill = "black" d = "M 379,95 L 373,114 C 373,118 379,123 382,119 383,115 379,112 375,112 L 383,90 360,79 353,104 C 354,109 358,112 362,109 363,104 359,102 355,102 L 360,86 379,95" />
+            <animateMotion
+            xlink:href = "#note_3"
+            dur = "3.5s"
+            repeatCount = "indefinite"
+            begin = "0s"
+            end = "14s"
+            fill = "freeze"
+            path = "M 0,0 C -66,-26 -334,-20 -429,66" />
+            <animate
+            xlink:href = "#note_3"
+            attributeName = "fill"
+            dur = "3.5s"
+            repeatCount = "indefinite"
+            begin = "0s"
+            end = "14s"
+            fill = "freeze"
+            from = "back"
+            to = "white"/>
+        <path id = "note_4" fill ="black" d = "M 299,109 L 303,101 298,97 294,106 311,121 C 308,123 305,128 309,131 312,132 317,128 315,122 L 299,109" />
+            <animateMotion
+            xlink:href = "#note_4"
+            dur = "4.5s"
+            repeatCount = "indefinite"
+            begin = "0s"
+            end = "18s"
+            fill = "freeze"
+            path = "M 0,0 C -66,-26 -334,-20 -429,66" />
+            <animate
+            xlink:href = "#note_4"
+            attributeName = "fill"
+            dur = "4.5s"
+            repeatCount = "indefinite"
+            begin = "0s"
+            end = "18s"
+            fill = "freeze"
+            from = "back"
+            to = "white"/>
+    </g>
+    <!-- butterfly -->
+    <path id = "butterfly" stroke = "black" stroke-width = "0.2" fill = "black" transform = "translate(-180,-442) scale(2)" >
+        <animate 
+        attributeName = "d"
+        begin = "5s"
+        end = "20s"
+        dur = "1440ms" 
+        repeatCount = "indefinite"
+        values = "M 90,221 C 83,226 74,228 75,218 76,216 76,213 83,215 75,208 82,205 77,197 80,198 86,198 91,211 90,208 89,205 87,204 89,199 90,195 92,194 96,198 100,202 94,215 95,215 100,212 90,225 89,225 90,222 90,221;
+        M 89,222 C 84,227 80,234 78,223 79,220 80,220 82,218 77,217 75,221 72,204 76,203 82,202 91,214 90,213 90,212 89,212 91,207 97,200 99,201 100,202 102,203 94,216 95,216 98,217 89,225 88,224 89,223 89,222; 
+        M 90,221 C 83,226 74,228 75,218 76,216 76,213 83,215 75,208 82,205 77,197 80,198 86,198 91,211 90,208 89,205 87,204 89,199 90,195 92,194 96,198 100,202 94,215 95,215 100,212 90,225 89,225 90,222 90,221;" />
+        <animate 
+            attributeName="fill"
+            begin = "10s"
+            end = "17s"
+            dur="3s" 
+            repeatCount="indefinite"
+            values="#FF0000; #FF1493; #FF4500; #FFE4B5; #9400D3; #00FF7F; #ADD8E6; #DEB887; #ADD8E6; #00FF7F; #9400D3; #FFE4B5; #FF4500;  #FF1493; #FF0000;"/>
+        <animate 
+            attributeName="fill"
+            begin = "17s"
+            dur = "3s"
+            from = "dark"
+            to = "white"/>
+        </path>
+        <animateMotion 
+            href = "#butterfly"
+            dur = "5s"
+            begin = "5s"
+            fill = "freeze"
+            totate = "auto"
+            path = "M 5,216 C 56,185 77,50 192,153 220,177 311,279 339,191 346,158 299,85 284,152 279,182 297,273 470,226"/>
+        <animateMotion
+          	href = "#butterfly"
+            dur = "5s"
+            begin = "16s"
+            fill = "freeze"
+            totate = "auto"
+            path = "M 451,226 L 930, 300" />
+ </svg>
+  

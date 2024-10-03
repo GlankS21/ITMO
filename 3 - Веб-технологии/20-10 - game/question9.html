@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/72956b8baa.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <h1>Question 1</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque, quaerat? Magni quia dolore rem itaque, a laudantium sunt nobis laborum natus aut inventore porro, est tempora quo, neque explicabo commodi!</p>
+        <a class="hint-icon"><i class="fa-solid fa-question"></i></a>
+        <p class="hint">hint 1</p>
+        <p class="hint">hint 2</p>
+        <p class="hint">hint 3</p>
+        <p class="hint">hint 4</p>
+        <div class="answer"><a href="index.html"><span><i class="fa-solid fa-check"></i></span>answer</a></div>
+    </header>
+</body>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+    const hintIcon = document.querySelector(".hint-icon");
+    const hints = document.querySelectorAll(".hint");
+    let hintIndex = 0;
+
+    hintIcon.addEventListener("click", function() {
+        if (hintIndex < hints.length) {
+            hints[hintIndex].style.display = "block";
+            hintIndex++; 
+        }
+    });
+});
+</script>
+</html>

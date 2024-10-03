@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question List</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        h1 {
+            margin-bottom: 20px;
+        }
+
+        ul {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center; /* Căn giữa các item */
+            gap: 10px; /* Khoảng cách giữa các item */
+        }
+
+        li {
+            list-style-type: none;
+        }
+
+        button {
+            padding: 10px 15px;
+            background-color: #007bff; /* Màu ban đầu */
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s; /* Hiệu ứng chuyển màu */
+        }
+
+        button:hover {
+            background-color: #0056b3; /* Màu khi hover */
+        }
+
+        /* Lớp cho trạng thái đã nhấn */
+        .hidden {
+            display: none; /* Ẩn button */
+        }
+    </style>
+</head>
+<body>
+    <h1>Question List</h1>
+    <ul id="questionList">
+        <li><button class="Question" data-question="1">1</button></li>
+        <li><button class="Question" data-question="2">2</button></li>
+        <li><button class="Question" data-question="3">3</button></li>
+        <li><button class="Question" data-question="4">4</button></li>
+        <li><button class="Question" data-question="5">5</button></li>
+        <li><button class="Question" data-question="6">6</button></li>
+        <li><button class="Question" data-question="7">7</button></li>
+        <li><button class="Question" data-question="8">8</button></li>
+        <li><button class="Question" data-question="9">9</button></li>
+        <li><button class="Question" data-question="10">10</button></li>
+        <li><button class="Question" data-question="11">11</button></li>
+        <li><button class="Question" data-question="12">12</button></li>
+        <li><button class="Question" data-question="13">13</button></li>
+        <li><button class="Question" data-question="14">14</button></li>
+        <li><button class="Question" data-question="15">15</button></li>
+        <li><button class="Question" data-question="16">16</button></li>
+        <li><button class="Question" data-question="17">17</button></li>
+        <li><button class="Question" data-question="18">18</button></li>
+        <li><button class="Question" data-question="19">19</button></li>
+        <li><button class="Question" data-question="20">20</button></li>
+    </ul>
+
+    <script>
+        // Lấy danh sách câu hỏi đã bị ẩn từ localStorage
+        const hiddenQuestions = JSON.parse(localStorage.getItem('hiddenQuestions')) || [];
+
+        // Lặp qua các button và ẩn các button tương ứng
+        document.querySelectorAll('.Question').forEach(button => {
+            const questionNumber = button.dataset.question;
+
+            // Nếu câu hỏi đã bị ẩn thì thêm lớp hidden
+            if (hiddenQuestions.includes(questionNumber)) {
+                button.classList.add('hidden'); // Ẩn button
+            }
+
+            // Thêm sự kiện click vào mỗi button
+            button.addEventListener('click', function() {
+                hiddenQuestions.push(questionNumber);
+                localStorage.setItem('hiddenQuestions', JSON.stringify(hiddenQuestions)); // Lưu trạng thái đã nhấn
+
+                // Chuyển hướng đến trang câu hỏi
+                window.location.href = `question.html?question=${questionNumber}`;
+            });
+        });
+    </script>
+</body>
+</html>
