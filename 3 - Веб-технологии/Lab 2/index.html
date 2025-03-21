@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <title>Информационная архитектура магазина одежды</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container fade-in">
+        <h1>Информационная архитектура <br>
+            магазина одежды</h1>
+        <div class="section">
+            <h2>Описание проекта</h2>
+            <p>Проект представляет собой онлайн-магазин одежды, предлагающий пользователю широкий выбор моделей для мужчин, женщин и детей.</p>
+            <p>Основная цель проекта — создание удобного и интуитивно понятного интерфейса, который поможет пользователям быстро найти нужный товар и оформить покупку. Мы учитываем потребности разных категорий пользователей и предлагаем персонализированные рекомендации на основе их предпочтений и истории покупок.</p>
+            <p>Наш сайт также обладает удобными функциями для мобильных устройств, что позволяет покупателям делать заказы в любое время и в любом месте, используя смартфоны и планшеты.</p>
+        </div>
+        <div class="section">
+            <h2>Структура сайта</h2>
+            <p>Ниже представлен список страниц и компонентов, которые будут использованы в проекте</p>
+            <ul class="website-list">
+                <!-- Главная страница -->
+                <li class="website-list-title">
+                    <strong>Главная страница</strong>
+                    <ul class="menu-main">
+                        <li class="menu-item">Категории
+                            <ul class="submenu">
+                                <li class="submenu-item"><a href="#category">Женская (новинки, верхняя одежда, джинсы, коллеция)</a></li>
+                                <li class="submenu-item"><a href="#category">Мужская (новинки, верхняя одежда, джинсы, коллеция)</a></li>
+                                <li class="submenu-item"><a href="#category">Дети (Школа, девочкам, мальчикам)</a></li>
+                                <li class="submenu-item"><a href="#category">Коллеция</a></li>
+                                <li class="submenu-item"><a href="#info">Информация</a></li>
+                            </ul>
+                        </li>
+                        <li class="menu-item">Поиск товаров</li>
+                        <li class="menu-item"><a href="#login">User</a></li>
+                        <li class="menu-item"><a href="#cart">Корзина</a></li>
+                        <li class="menu-item">Главный баннер</li>
+                    </ul>
+                </li>
+                <!-- Страница категории -->
+                <li id="category" class="website-list-title">
+                    <strong>Страница категории</strong>
+                    <ul>
+                        <li class="menu-item">Сортировка товаров</li>
+                        <li class="menu-item">Фильтры товаров
+                            <ul class="submenu">
+                                <li class="submenu-item">По популярности</li>
+                                <li class="submenu-item">По цене</li>
+                            </ul>
+                        </li>
+                        <li class="menu-item"><a href="#product">Список товаров</a>
+                            <ul class="submenu">
+                                <li class="submenu-item">Фото товара</li>
+                                <li class="submenu-item">Название товара</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>  
+                <!-- Страница товара -->
+                <li id="product" class="website-list-title">
+                    <strong>Страница товара</strong>
+                    <ul>
+                        <li class="menu-item">Изображение товара</li>
+                        <li class="menu-item">Название товара</li>
+                        <li class="menu-item">Код товара</li>
+                        <li class="menu-item">Цвет товара</li>
+                        <li class="menu-item">Выбор размера</li>
+                        <li class="menu-item">Выбор количества</li>
+                        <li class="menu-item">Кнопка <a href="#cart">"Купить"</a></li>
+                        <li class="menu-item">Кнопка <a href="#category">"Найти в магазине"</a></li>
+                        <li class="menu-item">Краткое контакты магазина (телефон, почта)</li>
+                        <li class="menu-item">Описание товара</li>
+                        <li class="menu-item">Предложения других товаров</li>
+                    </ul>
+                </li>
+                <!-- Страница корзины -->
+                <li id="cart" class="website-list-title">
+                    <strong>Страница корзины</strong>
+                    <ul>
+                        <li class="menu-item">Список товаров в корзине</li>
+                        <li class="menu-item">Изменение количества товаров</li>
+                        <li class="menu-item">Удаление товара</li>
+                        <li class="menu-item">Подсчёт стоимости</li>
+                        <li class="menu-item"><a href="#category">Кнопка "Продолжить покупку"</a></li>
+                        <li class="menu-item"><a href="#delivery">Кнопка "Платить"</a></li>
+                    </ul>
+                </li>
+                <!-- Страница оформления способа доставки -->
+                <li id="delivery" class="website-list-title">
+                    <strong>Страница оформления способа доставки</strong>
+                    <ul>
+                        <li class="menu-item">Выбор адреса доставки (Розничный или уже есть аккаунт)</li>
+                        <li class="menu-item">Форма ввода данных
+                            <ul class="submenu">
+                                <li class="submenu-item">Имя</li>
+                                <li class="submenu-item">Адрес</li>
+                                <li class="submenu-item">Телефон</li>
+                                <li class="submenu-item">Почта</li>
+                            </ul>
+                        </li>
+                        <li class="menu-item">Подтверждение стоимости</li>
+                        <li class="menu-item"><a href="#payment">Кнопка "Оплата и доставки"</a></li>
+                    </ul>
+                </li>    
+                <!-- Страница оплаты -->
+                <li id="payment" class="website-list-title">
+                    <strong>Страница оплаты</strong>
+                    <ul>
+                        <li class="menu-item">Выбор способа доставки</li>
+                        <li class="menu-item">Выбор способа оплаты</li>
+                        <li class="menu-item">Подтверждение заказов</li>
+                    </ul>
+                </li>
+                <!-- Страница логина -->
+                <li id="login" class="website-list-title">
+                    <strong>Страница логина</strong>
+                    <ul>
+                        <li class="menu-item">Форма ввода данных
+                            <ul class="submenu">
+                                <li class="submenu-item">Поле для ввода email</li>
+                                <li class="submenu-item">Поле для ввода пароля</li>
+                            </ul>
+                        </li>
+                        <li class="menu-item">Кнопка "Логин"</li>
+                        <li class="menu-item"><a href="#register">Ссылка на страницу регистрации</a></li>
+                    </ul>
+                </li>      
+                <!-- Страница регистрации (Register) -->
+                <li id="register" class="website-list-title">
+                    <strong>Страница регистрации</strong>
+                    <ul>
+                        <li class="menu-item">Форма ввода данных
+                            <ul class="submenu">
+                                <li class="submenu-item">Поле для ввода имени пользователя</li>
+                                <li class="submenu-item">Поле для ввода email</li>
+                                <li class="submenu-item">Поле для ввода телефона</li>
+                                <li class="submenu-item">Поле для ввода день рождения</li>
+                                <li class="submenu-item">Поле для ввода адреса</li>
+                                <li class="submenu-item">Поле для ввода пароля</li>
+                                <li class="submenu-item">Поле для подтверждения пароля</li>
+                            </ul>
+                        </li>
+                        <li class="menu-item">Кнопка "Регистрации"</li>
+                    </ul>
+                </li> 
+                <!-- Страница информаций -->
+                <li id="info" class="website-list-title">
+                    <strong>Страница информаций</strong>
+                    <ul>
+                        <li class="menu-item">О компании</li>
+                        <li class="menu-item">Контакты</li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+
+        <!-- Ссылка на макет в Figma -->
+        <div class="section">
+            <h2>Макет в Figma</h2>
+            <a style="display: block;" href="https://www.figma.com/design/3xdLRxDhL1SteWf2BQajXc/%D0%98%D0%BD%D1%82%D0%B5%D1%80%D0%B2%D1%8C%D1%8E?node-id=4-4&node-type=canvas&t=jE9AHxQACLpVl7Fu-0" class="link" target="_blank">Посмотреть макет в Figma</a>
+            <a class="link" style="display: block; " href="https://se.ifmo.ru/~s345124/web-project/">Посмотреть магазин</a>
+        </div>
+    </div>
+    <script src="https://kit.fontawesome.com/72956b8baa.js" crossorigin="anonymous" defer></script>
+</body>
+</html>

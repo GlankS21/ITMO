@@ -1,0 +1,148 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --back-color:rgba(0, 0, 0, 0.1);
+    --blue-color:#52abe7;
+    --while-color:#f5f5f5;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.6;
+    background-color: var(--while-color);
+    color: #333;
+    padding: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    background-color: #fff;
+    width: 100%;
+    max-width: 1000px;
+    border-radius: 12px;
+    box-shadow: 0 10px 20px var(--back-color);
+    overflow: hidden;
+    padding: 40px;
+}
+
+h1 {
+    font-size: 2.7rem;
+    font-weight: 700;
+    color: #2c3e50;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+h2 {
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: #34495e;
+    margin-bottom: 15px;
+    border-bottom: 2px solid var(--blue-color);
+    padding-bottom: 5px;
+}
+/* ----------------------------------------------------------- */
+p {
+    font-size: 1.1rem;
+    color: #7f8c8d;
+    line-height: 1.8;
+    margin-bottom: 20px;
+}
+.section {
+    margin-bottom: 50px;
+}
+ul {
+    list-style-type: none;
+    padding-left: 20px;
+    margin-left: 0;
+}
+ul li {
+    font-size: 1.1rem;
+    color: #555;
+    padding: 6px 0;
+}
+ul li > strong {
+    font-weight: 600;
+    color: #2c3e50;
+}
+.link {
+    color: var(--blue-color);
+    font-weight: 500;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+.link:hover {
+    text-decoration: underline;
+    color: var(--blue-color);
+}
+.fade-in {
+    opacity: 0;
+    animation: fadeIn 1s forwards;
+}
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+    }
+}
+.container a {
+    display: inline-block;
+    margin-top: 20px;
+}
+/* --------------------------------------------- */
+.website-list-title {
+    font-size: 1.4em;
+    font-weight: 600;
+    color: #2c3e50;
+    margin-bottom: 15px;
+}
+.menu-main, .submenu{
+    padding-left: 20px;
+}
+.menu-item {
+    font-size: 1.1rem;
+    font-weight: 400;
+    padding: 10px 15px;
+    margin: 5px 0;
+    background-color: #ecf0f1;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+.menu-item:hover {
+    background-color: var(--blue-color);
+    color: white;
+}
+.submenu-item {
+    font-size: 15px;
+    padding: 8px 15px;
+    margin: 4px 0;
+    background-color: #f5f5f5;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+.submenu {
+    display: none;
+    padding-left: 10px;
+}
+.menu-item:hover .submenu {
+    display: block;
+}
+/* Các hiệu ứng hover */
+.menu-item, .submenu-item {
+    transition: all 0.3s ease;
+}
+.menu-item:hover {
+    background-color: var(--blue-color);
+    color: white;
+    transform: scale(1.05);
+}
+.submenu-item:hover:hover {
+    transform: scale(1.02);
+}

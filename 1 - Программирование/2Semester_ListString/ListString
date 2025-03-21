@@ -1,0 +1,165 @@
+public class ListString{
+    private class StringItem {
+        private final static byte SIZE = 16; //размер символьного массива в блоке
+        private char [] symbols; // Массив символов
+        private StringItem next; // следующий блок
+        private int size; // количество элементов символа
+    //Конструкторы
+        public StringItem(){
+            1. Выделение памяти по символьный массив
+            2. Инициализация переменных size
+        }
+        public StringItem(StringItem block){
+            1. Выделение памяти по символьный массив
+            2. copy(0,block.symbols.size, 0, block.symbols, symbols)
+            3. size = block.size
+            4. next = block.next
+        }
+        public StringItem(char[] symbols){
+            1. Выделение памяти по символьный массив
+            2.1 Если symbol.length == 16 => this.symbols = symbols
+            2.2 Наоборот, Копируем все символы из symbols => this.symbols // copy
+            3. size = symbols.size
+        }
+    }
+    private class Position{
+        private StringItem block; //Блок, в котором содержит Position
+        private int position; // Позиция position в этом блоке
+        public Position(StringItem block, int position){
+            1. Инициализация переменной block
+            2. Инициализация переменных position
+        }
+    }
+    private StringItem head; // Первый блок в строке
+    public ListString(){
+        1. Инициализация переменной head (пустая строка)
+    }
+    public ListString(String s){
+        1. Если длина s < 16 => только существует 1 блок - head = new ListString(s.toCharArray())
+        2. Ecли длина s >= 16
+            2.1. head = new StringItem(s.substring(0, 16).toCharArray())
+            2.2. Инициализация переменной StringItem temp = head, i = 32 ( i = 16 + 16 // head.size + 16)
+            2.3. Пока i < длина s. temp.next = new StringItem(s.substring(i - 16, i).toCharArray())
+            2.3. Если длина s % 16 != 0. temp.next = new StringItem(s.substring(i - 16, s.length()).toCharArray())
+    }
+    //
+    public ListString(ListString ls){
+          // добавить каждый блок
+    }
+    //длина строки
+    public int length(){
+        1. Если head == null. return 0
+        2. Инициализация переменной sum = 0
+        3. Инициализация переменной ListString temp = head
+        4. Пока temp != null && temp.next != null.
+            4.1. Пока !join(temp, temp.next) => ничего не произходит
+            4.2. sum увеличивается temp.size
+            4.3. temp = temp.next
+        5. Возвращается sum
+    }
+    //вернуть символ в строке в позиции index
+    public char charAt(int index){
+        1. Найти блок и позицию в этом блоке
+        2. Если позиция не действительна выбросить исключение
+        3. Если позиция действительна
+            3.1. if(find(index).block == null) => отображать на экране символ в позиции index в блоке head
+            3.2. find(index).block.next.position(index)
+    }
+    //заменить символ в позиции inЫdex на c
+    public void setcharAt(int index, char c){
+        1. Найти блок и позицию в этом блоке
+        2. Если позиция не действительна выбросить исключение
+        3. Если позиция действительна заменить символ на c
+            3.1. find(index).block == null => head[index] = c;
+            3.2. find(index).block.next.position(index) = c;
+    }
+    //взятие подстроки, от start до end, не включая end
+    public ListString subString(int start, int end){
+        1. Если end < start или start < 0 => выбросить исключение
+        2. Найти блок start, end и позиции в этом блок
+        4. Инициализация ListString res
+        5. Если блок start == блок end => res.head = new StringItem(copy(start.position, end.position)). Возвращается res
+        6. Если блок start != блок end => Мы копируем все блоки из start -> end (block - start = [start, block.start.size], block - end = [0,end])
+    }
+    //добавить в конец символ
+    public void append(char c){
+        1. Инициализация новый массив symbol c одной переменной 'c'
+        2. Найти последний блок - end()
+        3. Если end().size == end().SIZE ( == 16). end().next = new StringItem(symbol)
+        4. Если end().size != end().SIZE. end() = new StringItem(копия элемента из symbol в массив end())
+    }
+    //добавить в конец строку String
+    public void append(String s){
+        1. Инициализация новый ListString ls = new ListString(String s)
+        2. Если head = null => new ListString(s)
+        3. Если нет, Заменит end().next = ls.head
+    }
+    //добавить в конец строку ListString
+    public void append(ListString ls){
+         1. Найти последний блок end = end()
+         2. добавить ls в конец ListString с помощью переменной temp
+    }
+    //вставить в строку в позицию index строку ListString
+    public void insert(int index, ListString ls){
+        1. Найти блок и позицию в этом блоке
+        2. Если позиция не действительна выбросить исключение
+        3. Если позиция не действительна. Нашел блок block
+        4. Создать копию ls
+        5. insert(index, ls)
+    }
+    //вставить в строку в позицию index строку String
+    public void insert(int index, String s){
+        1. Найти блок и позицию в этом блоке
+        2. Если позиция не действительна выбросить исключение
+        3. Если позиция действительна. Приходим к 4
+        4. insert(index, ListString(s)
+    }
+    private void subinsert(int index, ListString ls){
+        1. Разделить блок, в котором находится index. мы назовем это begin и end
+        2. begin = ls.head;
+        3. Заменим последний блок.next = end
+    }
+    public String toString(){
+        1. Если head = null, return ""
+        2. Инициализация новый StringItem temp = head
+        3. Отображение на экране temp.symbols.toString(0, temp.size)
+        4. Если temp != null. temp = temp.next => Вернемся 3
+    }
+    // метод для копирования из start => end - 1 и втавить в позицим index
+    private void copy(int start, int length, int index, char[] from, char[] to){
+         1. Инициализация i = 0, end_arr =  start + length
+         2. Если i >= index && i < end_arr: to[i] = from[index++]
+         3. Возвращается new StringItem(sum)
+    }
+    // метод для поиска последнего блока
+    private StringItem end(){
+         1. Если head == null => Возвращается null
+         2. Инициализация переменной ListString temp = head
+         3. Пока temp.next != null. temp = temp.next
+         4. Если temp.next == null. temp - последний блок
+    }
+    private Position find(int index){
+        1. Инициализация переменной ListString temp = head
+        2. Если index < head.size => return new Position(null, index), наоборот index -= head.size
+        3. Пока temp.next != null и index больше , чем длина блока temp, уменьшите index на длину temp.next.size
+           temp = temp.next
+        4. Если temp.next == null => return new Position(temp, -1)
+        5. Наоборот return new Position(temp, index)
+    }
+     // Разделить блок
+     private void split(StringItem block, int index){
+        1. StringItem after = new StringItem(copy от index => block.end)
+        2. Если block.next != null => after.next = block.next
+        3. block = new StringItem(copy от 0 => index)
+        4. block.next = after
+     }
+     // Соединить блоки
+     private boolean join(StringItem block1, StringItem block2){
+        1. Если block1.size + block2.size > 16 => return false
+        2. Если block1.size + block2.size <= 16
+            1.1. copy(0, block2.symbols.size, 0, block2.symbols, block1.symbols)
+            1.2. block1.size += block2.size
+        3. block1.next = block2.next
+        2. return true
+     }
+}
