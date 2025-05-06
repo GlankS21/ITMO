@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<inkscape-extension xmlns="http://www.inkscape.org/namespace/inkscape/extension">
+    <name>My Square</name>
+    <id>My.square</id>
+    <param name="s_l"       type="float"   min="0.01" max="10000" gui-text="Side Length (px):">100.0</param>
+    <param name="c_x"       type="float"   min="-1000" max="1000" gui-text="X coord.:">0.0</param>
+    <param name="c_y"       type="float"   min="-1000" max="1000" gui-text="Y coord:">0.0</param>
+    <effect>
+        <object-type>all</object-type>
+        <effects-menu>
+            <submenu name="Render"/>
+        </effects-menu>
+    </effect>
+    <script>
+        <command location="inx" interpreter="python">my.py</command>
+    </script>
+</inkscape-extension>
